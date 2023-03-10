@@ -1,7 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  // ssr: false,
+
   modules: [
     'nuxt-windicss',
-    'nuxt-icon'
-  ]
+    'nuxt-icon',
+    'nuxt-vuefire',
+  ],
+  vuefire: {
+    config: {
+      apiKey: "",
+      authDomain: "",
+      projectId: "",
+      storageBucket: "",
+      messagingSenderId: "",
+      appId: "",
+      measurementId: ""
+    },
+  }
 })
