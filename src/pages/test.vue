@@ -5,7 +5,7 @@ const db = useFirestore();
 const fireCollection = collection(db, 'products');
 const products = useCollection(fireCollection);
 
-const init = { name: '', brand: '', price: 0 }
+const init = { name: '', brand: '', exp: new Date(), price: 0 }
 const newEntry = ref({ ...init });
 
 const addProduct = async () => {
@@ -73,6 +73,18 @@ const deleteProduct = (id: string) => deleteDoc(doc(db, 'products', id))
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                 placeholder="Product brand"
                 required="true">
+            </div>
+            <div>
+              <label for="exp"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Expiration</label>
+              <o-datepicker name="exp"
+                id="exp"
+                v-model="newEntry.exp"
+                placeholder="Expiration"
+                icon="calendar"
+                trap-focus
+              >
+              </o-datepicker>
             </div>
             <div>
               <label for="price"
@@ -266,6 +278,8 @@ const deleteProduct = (id: string) => deleteDoc(doc(db, 'products', id))
                 <th scope="col"
                   class="px-4 py-3">Brand</th>
                 <th scope="col"
+                  class="px-4 py-3">Expiration</th>
+                <th scope="col"
                   class="px-4 py-3">Price</th>
                 <th scope="col"
                   class="px-4 py-3">
@@ -282,6 +296,7 @@ const deleteProduct = (id: string) => deleteDoc(doc(db, 'products', id))
                 </th>
                 <td class="px-4 py-3">{{ p.brand }}</td>
                 <td class="px-4 py-3">${{ p.price }}</td>
+                <td class="px-4 py-3">${{ p.exp }}</td>
                 <td class="px-4 py-3 flex items-center justify-end">
                   <button type="button"
                     :data-modal-toggle="`dm${p.id}`"

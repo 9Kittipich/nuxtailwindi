@@ -13,6 +13,9 @@
     "nuxt-windicss": "^2.6.0"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@oruga-ui/oruga-next": "^0.5.10",
     "firebase": "^9.17.2",
     "flowbite": "^1.6.3",
     "flowbite-windicss-plugin": "^0.1.3",
