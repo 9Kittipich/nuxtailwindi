@@ -5,7 +5,7 @@ const db = useFirestore();
 const fireCollection = collection(db, 'products');
 const products = useCollection(fireCollection);
 
-const init = { name: '', brand: '', exp: new Date(), price: 0 }
+const init = { name: '', brand: '', exp: new Date(2020, 5, 12), price: 0 }
 const newEntry = ref({ ...init });
 
 const addProduct = async () => {
@@ -20,7 +20,6 @@ const deleteProduct = (id: string) => deleteDoc(doc(db, 'products', id))
 </script>
 
 <template>
-  <pre>{{ newEntry }}</pre>
   <!-- Main modal -->
   <div id="defaultModal"
     tabindex="-1"
@@ -295,8 +294,8 @@ const deleteProduct = (id: string) => deleteDoc(doc(db, 'products', id))
                   class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ p.name }}
                 </th>
                 <td class="px-4 py-3">{{ p.brand }}</td>
+                <td class="px-4 py-3">{{ new Date(p.exp?.seconds * 1000)?.toDateString() }}</td>
                 <td class="px-4 py-3">${{ p.price }}</td>
-                <td class="px-4 py-3">${{ p.exp }}</td>
                 <td class="px-4 py-3 flex items-center justify-end">
                   <button type="button"
                     :data-modal-toggle="`dm${p.id}`"
@@ -350,6 +349,7 @@ const deleteProduct = (id: string) => deleteDoc(doc(db, 'products', id))
                             No, cancel
                           </button>
                           <button type="button"
+                            :data-modal-toggle="`dm${p.id}`"
                             @click="deleteProduct(p.id)"
                             class="py-2 px-3 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-900">
                             Yes, I'm sure
