@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     config: {
       apiKey: "",
       authDomain: "",
-      projectId: "demofibase-f94e1",
+      projectId: process.env.NUXT_VUEFIRE_CONFIG_PROJECT_ID,
       storageBucket: "",
       messagingSenderId: "",
       appId: "",
