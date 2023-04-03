@@ -1,7 +1,6 @@
 <template>
     <section class="bg-gray-50 dark:bg-gray-900 p-3 sm:p-5">
     <div class="mx-auto max-w-screen-xl px-4 lg:px-12">
-        <!-- Start coding here -->
         <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
             <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
                 <div class="w-full md:w-1/2">
@@ -42,7 +41,7 @@
 
 </td>
                             <td class="px-4 py-3">0</td>
-                            <td class="px-4 py-3">0</td>
+                            <td class="px-4 py-3"></td>
                             <td class="px-4 py-3 flex items-center justify-end">
                                 <button id="apple-imac-27-dropdown-button" data-dropdown-toggle="apple-imac-27-dropdown" class="inline-flex items-center p-0.5 text-sm font-medium text-center text-gray-500 hover:text-gray-800 rounded-lg focus:outline-none dark:text-gray-400 dark:hover:text-gray-100" type="button">
                                     <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +74,7 @@
 
 </td>
                             <td class="px-4 py-3">0</td>
-                            <td class="px-4 py-3">0</td>
+                            <td class="px-4 py-3"></td>
                             <td class="px-4 py-3 flex items-center justify-end">
                                 <button id="apple-imac-27-dropdown-button" data-dropdown-toggle="apple-imac-27-dropdown" class="inline-flex items-center p-0.5 text-sm font-medium text-center text-gray-500 hover:text-gray-800 rounded-lg focus:outline-none dark:text-gray-400 dark:hover:text-gray-100" type="button">
                                     <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
