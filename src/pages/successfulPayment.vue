@@ -3,14 +3,14 @@
         <div class="mx-auto max-w-screen-xl px-4 lg:px-12">
             <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
                 <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
-                    <div class="w-full md:w-1/2 ">
+                    <div class="w-full md:w-1/2">
 
                         <label for="simple-search">ใบแจ้งหนี้</label>
 
                     </div>
 
-                    <NuxtLink to='/successfulPayment'><button type="button"
-                            class="text-white bg-green-500 hover:bg-green-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-15 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">ชำระแล้ว</button>
+                    <NuxtLink to='/invoice'><button type="button"
+                            class="text-white bg-red-500 hover:bg-red-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-15 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">ค่างชำระ</button>
                     </NuxtLink>
                 </div>
                 <div class="overflow-x-auto">
@@ -26,10 +26,10 @@
                         <tbody>
                             <tr class="border-b dark:border-gray-700">
                                 <th scope="row"
-                                    class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">101</th>
+                                    class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">103</th>
                                 <td class="px-4 py-3">
                                     <span
-                                        class="bg-gray-100 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">ยังไม่ได้ชำระ</span>
+                                        class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">ชำระแล้ว</span>
                                 </td>
                                 <td class="px-4 py-3 items-center">
                                     1000
@@ -40,10 +40,10 @@
                             </tr>
                             <tr class="border-b dark:border-gray-700">
                                 <th scope="row"
-                                    class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">102</th>
+                                    class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">104</th>
                                 <td class="px-4 py-3">
                                     <span
-                                        class="bg-red-100 text-red-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">ค่างชำระ</span>
+                                        class="bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300">ชำระแล้ว</span>
                                 </td>
 
                                 <td class="px-4 py-3">
