@@ -111,7 +111,7 @@
                 </nav>
             </div>
 
-        </div>z
+        </div>
 
     </section>
 </template>
