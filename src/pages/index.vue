@@ -1,3 +1,3 @@
 <template>
-  <h1>Test Hello, World!</h1>
+  <div>welcome to thailand</div>
 </template>
