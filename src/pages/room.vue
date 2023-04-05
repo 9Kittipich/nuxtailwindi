@@ -55,7 +55,7 @@
                                             <a href="#"
                                                 class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">ค้างชำระ</a>
                                         </li>
-                                       
+
                                     </ul>
                                 </div>
                             </div>
@@ -83,10 +83,11 @@
                     </div>
                 </div>
                 <hr class="p-2">
-                <div class="flex flex-col items-stretch justify-end flex-shrink-0 w-full space-y-2 md:w-auto md:flex-row md:space-y-0 md:items-center md:space-x-3 p-3">
+                <div
+                    class="flex flex-col items-stretch justify-end flex-shrink-0 w-full space-y-2 md:w-auto md:flex-row md:space-y-0 md:items-center md:space-x-3 p-3">
                     <div class="flex">
                         <il class="mr-4">
-                            เลือก: 
+                            เลือก:
                         </il>
                         <div class="flex items-center mr-4">
                             <input id="inline-radio" type="radio" value="" name="inline-radio-group"
@@ -120,11 +121,13 @@
                             }}
                             </h3>
                         </a>
+                        <div v-if="i.status !==0">
                         <svg width="50" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
                             aria-hidden="true">
                             <path clip-rule="evenodd" fill-rule="evenodd"
                                 d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"></path>
                         </svg>
+                        </div>
                         <div class="flex items-center">
                             <div v-if="i.status === 0">
                                 <span
@@ -153,6 +156,8 @@
             </div>
         </div>
     </section>
+
+
 </template>
 <script lang="ts">
 export default ({
