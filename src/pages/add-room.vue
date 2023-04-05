@@ -727,12 +727,12 @@
               <a
                 href="#"
                 class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-                >Edit</a
+                >แก้ไข</a
               >&nbsp;|&nbsp;
               <a
                 href="#"
                 class="font-medium text-red-600 dark:text-red-500 hover:underline"
-                >Delete</a
+                >ลบ</a
               >
             </td>
           </tr>
