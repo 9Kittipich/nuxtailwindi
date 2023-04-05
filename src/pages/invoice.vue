@@ -3,8 +3,8 @@
         <div class="mx-auto max-w-screen-xl px-4 lg:px-12">
             <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden">
                 <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0 md:space-x-4 p-4">
-                    <div class="w-full md:w-1/2 ">
-                        <label for="simple-search">ใบแจ้งหนี้</label>
+                    <div class="w-full md:w-1/2 text-xl">
+                        <label for="simple-search text-center">ใบแจ้งหนี้</label>
                     </div>
 
                     <NuxtLink to='/successfulPayment'><button type="button"
@@ -12,8 +12,8 @@
                     </NuxtLink>
                 </div>
                 <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 text-center">
+                        <thead class="text-xm text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                             <tr>
                                 <th scope="col" class="px-4 py-3">ห้อง</th>
                                 <th scope="col" class="px-4 py-3">สถานะ</th>
@@ -47,8 +47,8 @@
                                 <td class="px-4 py-3">
                                     1200
                                 </td>
-                                <td class="px-4 py-3"><button type="button"
-                                        class="text-white bg-yellow-500 hover:bg-yellow-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-15 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">รายละเอียด</button>
+                                <td class="px-4 py-3">
+                                    <button type="button" class="text-white bg-yellow-500 hover:bg-yellow-400 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-15 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">รายละเอียด</button>
                                 </td>
                             </tr>
                         </tbody>
